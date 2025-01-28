@@ -315,8 +315,10 @@ nav ul li a:hover::after {
     font-size: 25px;
 }
 
-.social-icons {
-    margin-top: 30px;
+.social-icons img {
+    width: 30px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 5px; /* Add some spacing between icons */
 }
 
 .social-icons a {
