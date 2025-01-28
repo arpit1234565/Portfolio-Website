@@ -9,254 +9,240 @@
     <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
-<!-- Header Section -->
-<div id="header">
-    <div class="container">
-        <nav>
-            <img src="https://raw.githubusercontent.com/arpit1234565/Portfolio-Website/main/logo%20(2).png" class="logo" alt="Logo"> <!-- Updated logo URL -->
-            <ul id="sidemenu">
-                <li><a href="#header">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#certifications">Certifications</a></li>
-                <li><a href="#projects">My Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <i class="fas fa-times" onclick="closeMenu()"></i>
-            </ul>
-            <i class="fas fa-bars" onclick="openMenu()"></i>
-        </nav>
-        <div class="header-text">
-            <p>Data Driven Professional</p>
-            <h1>Hi, I'm <span>Arpit</span><br>Singh From India</h1>
-        </div>
-    </div>
-</div>
-
-<!-- About Section -->
-<div id="about">
-    <div class="container">
-        <div class="row">
-            <div class="about-col-1">
-                <img src="https://raw.githubusercontent.com/arpit1234565/Portfolio-Website/main/background1.jpg" alt="About Me"> <!-- Updated image URL -->
-            </div>
-            <div class="about-col-2">
-                <h1 class="sub-title">About Me</h1>
-                <p>Hello! I'm Arpit Singh, a Data Science and Business Analytics enthusiast with a background in Computer Engineering and 3 years of experience in Financial and Medical Underwriting. Currently, I’m expanding my expertise in Data Science, Machine Learning, and Business Analytics.</p>
-                <p>Key Strengths:</p>
-                <ul>
-                    <li>Expertise in statistical analysis, data visualization, and predictive modeling.</li>
-                    <li>Proficient in Python, Power BI, SQL, Tableau, and Excel.</li>
-                    <li>In my free time, I explore advancements in AI and Big Data.</li>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo%20(2).png" class="logo" alt="Logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#projects">My Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
-                <p>Let’s connect and explore how data can drive business growth!</p>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Data Driven Professional</p>
+                <h1>Hi, I'm <span>Arpit</span><br>Singh From India</h1>
+            </div>
+        </div>
+    </div>
 
-                <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="openTab('Skills')">Skills</p>
-                    <p class="tab-links" onclick="openTab('Experience')">Experience</p>
-                    <p class="tab-links" onclick="openTab('Education')">Education</p>
+    <!-- About Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="https://github.com/arpit1234565/Portfolio-Website/blob/main/20180222-DSC_0078.jpg" alt="About Me">
                 </div>
-                <div class="tab-contents active-tab" id="Skills">
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello! I'm Arpit Singh, a Data Science and Business Analytics enthusiast with a background in Computer Engineering and 3 years of experience in Financial and Medical Underwriting. Currently, I’m expanding my expertise in Data Science, Machine Learning, and Business Analytics.</p><br>
+                    <p>Key Strengths:</p><br>
                     <ul>
-                        <li><span>Data Analysis & Visualization</span></li>
-                        <li><span>Statistical Analysis</span></li>
-                        <li><span>Machine Learning</span></li>
-                        <li><span>Programming & Tools</span></li>
-                        <li><span>MLOps</span></li>
+                        <li>Expertise in statistical analysis, data visualization, and predictive modeling.</li><br>
+                        <li>Proficient in Python, Power BI, SQL, Tableau, and Excel.</li><br>
+                        <li>In my free time, I explore advancements in AI and Big Data.</li><br>
                     </ul>
-                </div>
-                <div class="tab-contents" id="Experience">
-                    <ul>
-                        <li><span>2022 - 2024</span><br>Executive at Datamatics Global Services Limited</li>
-                        <li><span>2022</span><br>Sales Associate at Shriz International.</li>
-                        <li><span>2021 - 2022</span><br>Customer Service Associate at Ovians Global Solutions Pvt Ltd.</li>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="Education">
-                    <ul>
-                        <li><span>2016</span><br>B.E (Computer Engineering) from K.K Wagh Institute</li>
-                        <li><span>2016</span><br>HSC from K.R.T Arts, B.H Commerce & A.M Science College.</li>
-                        <li><span>2014</span><br>SSC from Saint Francis High School.</li>
-                    </ul>
+                    <p>Let’s connect and explore how data can drive business growth!</p>
+    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('Skills', event)">Skills</p>
+                        <p class="tab-links" onclick="openTab('Experience', event)">Experience</p>
+                        <p class="tab-links" onclick="openTab('Education', event)">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Data Analysis & Visualization</span><br>Exploratory Data Analysis (EDA), Data Cleaning & Preprocessing, Business Intelligence (Power BI, Excel), Data Storytelling</li>
+                            
+                            <li><span>Statistical Analysis</span><br>Hypothesis Testing, Probability & Probability Distributions, ANOVA, Regression Analysis</li>
+                            
+                            <li><span>Machine Learning</span><br>Supervised & Unsupervised Learning, Model Evaluation & Optimization, Feature Engineering, Classification & Clustering Techniques</li>
+                            
+                            <li><span>Programming & Tools</span><br>Python (Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn), R Programming (Tidyverse, ggplot2, caret), SQL (Database Management, Query Optimization), Excel (Pivot Tables, Data Analysis), Power BI (Dashboard Creation, Report Automation)</li>
+                            
+                            <li><span>MLOps</span><br>Model Deployment (Flask, FastAPI), CI/CD Pipelines, Model Monitoring & Maintenance, Cloud Platforms (AWS, GCP, Azure)</li>
+                        </ul>
+                    </div>
+     
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>2022 - 2024</span><br>Executive at Datamatics Global Services Limited</li>
+                            <li><span>2022</span><br>Sales Associate at Shriz International.</li>
+                            <li><span>2021 - 2022</span><br>Customer Service Associate at Ovians Global Solutions Pvt Ltd.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2016</span><br>B.E (Computer Engineering) from K.K Wagh Institute</li>
+                            <li><span>2016</span><br>HSC from K.R.T Arts, B.H Commerce & A.M Science College.</li>
+                            <li><span>2014</span><br>SSC from Saint Francis High School.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-
-<!-- Certifications Section -->
-<div id="certifications">
-    <div class="container">
-        <h1 class="sub-title">My Certifications</h1>
-        <div class="services-list">
-            <div>
-                <i class="fas fa-certificate"></i>
-                <h2>Post Graduate Program in Data Science in Business Analytics (Pursuing)</h2>
-                <p>Pursuing the program and gaining expertise in Python, Machine Learning, and Business Analytics.</p>
-            </div>
-            <div>
-                <i class="fas fa-certificate"></i>
-                <h2>Microsoft Power BI Data Analyst</h2>
-                <p>Earned the Microsoft Power BI Data Analyst certification.</p>
-                <a href="https://www.coursera.org/account/accomplishments/professional-cert/PIYUHZC995BJ" target="_blank">View Certification</a>
-            </div>
-            <div>
-                <i class="fas fa-certificate"></i>
-                <h2>Data Science and Machine Learning Bootcamp with R</h2>
-                <p>Earned the Data Science and Machine Learning Bootcamp with R certification from Udemy.</p>
-                <a href="https://www.udemy.com/certificate/UC-1259dbfc-c13d-4536-9768-04a3aab58b33/" target="_blank">View Certification</a>
-            </div>
-            <div>
-                <i class="fas fa-certificate"></i>
-                <h2>Complete SQL and Databases Bootcamp</h2>
-                <p>Earned the Complete SQL and Databases Bootcamp certification from Udemy.</p>
-                <a href="https://www.udemy.com/certificate/UC-8162eec8-dd3e-4462-bd3b-80b19efbd302/" target="_blank">View Certification</a>
-            </div>
-            <div>
-                <i class="fas fa-certificate"></i>
-                <h2>Deploy ML Model in Production with FastAPI and Docker</h2>
-                <p>Earned the Deploy ML Model in Production with FastAPI and Docker certification from Udemy.</p>
-                <a href="https://www.udemy.com/certificate/UC-82ab2514-0296-4805-84cf-0957546e31a3/" target="_blank">View Certification</a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Projects Section -->
-<div id="projects">
-    <div class="container">
-        <h1 class="sub-title">My Projects</h1>
-        <div class="work-list">
-            <div class="work">
-                <img src="https://raw.githubusercontent.com/arpit1234565/Portfolio-Website/main/Project_1.jpg" alt="Austo Motor Company">
-                <div class="layer">
-                    <h3>Austo Motor Company</h3>
-                    <p>Conducting exploratory data analysis to identify key variables driving car sales for AUSTO.</p>
-                    <a href="https://github.com/arpitsingh4297/Data-Science-and-Business-Analytics-Projects/blob/main/PDS_project_final_submission.ipynb" target="_blank">Project Link</a>
+    
+    <!-- Certifications Section -->
+    <div id="certifications">
+        <div class="container">
+            <h1 class="sub-title">My Certifications</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-certificate"></i>
+                    <h2>Post Graduate Program in Data Science in Business Analytics (Pursuing)</h2>
+                    <p>Pursuing the program and gaining expertise in Python, Machine Learning, and Business Analytics.</p>
                 </div>
-            </div>
-            <div class="work">
-                <img src="https://raw.githubusercontent.com/arpit1234565/Portfolio-Website/main/Project_2.avif" alt="Inferential Statistics Project">
-                <div class="layer">
-                    <h3>Inferential Statistics Project</h3>
-                    <p>The Inferential Statistics Project analyzes three industry problems.</p>
-                    <a href="https://github.com/arpitsingh4297/Data-Science-and-Business-Analytics-Projects/blob/main/IS%20Project%20Final%20Submission-%202.ipynb" target="_blank">Project Link</a>
+                <div>
+                    <i class="fas fa-certificate"></i>
+                    <h2>Microsoft Power BI Data Analyst</h2>
+                    <p>Earned the Microsoft Power BI Data Analyst certification.</p>
+                    <a href="https://www.coursera.org/account/accomplishments/professional-cert/PIYUHZC995BJ" target="_blank">View Certification</a>
                 </div>
-            </div>
-            <div class="work">
-                <img src="https://raw.githubusercontent.com/arpit1234565/Portfolio-Website/main/Project_3.jpg" alt="OTT Data Analysis">
-                <div class="layer">
-                    <h3>OTT Data Analysis</h3>
-                    <p>This project analyzes content data to develop a linear regression model.</p>
-                    <a href="https://github.com/arpitsingh4297/Data-Science-and-Business-Analytics-Projects/blob/main/PM%20Project%20Source%20Code%20Final%20Submission.ipynb" target="_blank">Project Link</a>
+                <div>
+                    <i class="fas fa-certificate"></i>
+                    <h2>Data Science and Machine Learning Bootcamp with R</h2>
+                    <p>Earned the Data Science and Machine Learning Bootcamp with R certification from Udemy.</p>
+                    <a href="https://www.udemy.com/certificate/UC-1259dbfc-c13d-4536-9768-04a3aab58b33/" target="_blank">View Certification</a>
                 </div>
-            </div>
-            <div class="work">
-                <img src="https://raw.githubusercontent.com/arpit1234565/Portfolio-Website/main/Project_4.png" alt="INN Hotels - Booking Cancellation Prediction">
-                <div class="layer">
-                    <h3>INN Hotels - Booking Cancellation Prediction</h3>
-                    <p>This project develops machine learning models to predict booking cancellations.</p>
-                    <a href="https://github.com/arpitsingh4297/Data-Science-and-Business-Analytics-Projects/blob/main/Machine%20Learning%201%20Project%20Submission.ipynb" target="_blank">Project Link</a>
+                <div>
+                    <i class="fas fa-certificate"></i>
+                    <h2>Complete SQL and Databases Bootcamp</h2>
+                    <p>Earned the Complete SQL and Databases Bootcamp certification from Udemy.</p>
+                    <a href="https://www.udemy.com/certificate/UC-8162eec8-dd3e-4462-bd3b-80b19efbd302/" target="_blank">View Certification</a>
                 </div>
-            </div>
-            <div class="work">
-                <img src="https://raw.githubusercontent.com/arpit1234565/Portfolio-Website/main/Project_5.jpg" alt="EasyVisa Application">
-                <div class="layer">
-                    <h3>EasyVisa Application</h3>
-                    <p>Analyze Visa applicant data to build a predictive model.</p>
-                    <a href="https://github.com/arpitsingh4297/Data-Science-and-Business-Analytics-Projects/blob/main/Machine%20Learning%201%20Project%20Submission.ipynb" target="_blank">Project Link</a>                    
-                </div>
-            </div>
-            <div class="work">
-                <img src="https://raw.githubusercontent.com/arpit1234565/Portfolio-Website/main/Project_6.png" alt="AllLife Bank">
-                <div class="layer">
-                    <h3>AllLife Bank</h3>
-                    <p>This project segments AllLife Bank’s credit card customers based on spending patterns.</p>
-                    <a href="https://github.com/arpitsingh4297/Data-Science-and-Business-Analytics-Projects/blob/main/Unsupervised%20Learning%20Project%20Code%20Submission.ipynb" target="_blank">Project Link</a>
+                <div>
+                    <i class="fas fa-certificate"></i>
+                    <h2>Deploy ML Model in Production with FastAPI and Docker</h2>
+                    <p>Earned the Deploy ML Model in Production with FastAPI and Docker certification from Udemy.</p>
+                    <a href="https://www.udemy.com/certificate/UC-82ab2514-0296-4805-84cf-0957546e31a3/" target="_blank">View Certification</a>
                 </div>
             </div>
         </div>
-        <a href="#" class="btn">See more</a>
     </div>
-</div>
 
-<!-- Contact Section -->
-<div id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fas fa-paper-plane"></i> Email: arpitsingh4297@outlook.com</p>
-                <p><i class="fas fa-phone-square-alt"></i> Phone Number: 9975556702 / 9370201547</p>
-                <div class="social-icons">
-                    <a href="https://www.facebook.com/profile.php?id=100014442824564" target="_blank">
-                        <img src="https://raw.githubusercontent.com/arpit1234565/Portfolio-Website/main/facebook-icon.png" alt="Facebook">
-                    </a>
-                    <a href="https://www.instagram.com/_iam_arpitsingh_/?hl=en" target="_blank">
-                        <img src="https://raw.githubusercontent.com/arpit1234565/Portfolio-Website/main/instagram-icon.jpg" alt="Instagram">
-                    </a>
-                    <a href="https://www.linkedin.com/in/arpitsingh04" target="_blank">
-                        <img src="https://raw.githubusercontent.com/arpit1234565/Portfolio-Website/main/linkedin-icon.png" alt="LinkedIn">
-                    </a>
+    <!-- Projects Section -->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="https://raw.githubusercontent.com/arpit1234565/Portfolio-Website/main/Project_1.jpg" alt="Austo Motor Company">
+                    <div class="layer">
+                        <h3>Austo Motor Company</h3>
+                        <p>Conducting exploratory data analysis to identify key variables driving car sales for AUSTO.</p>
+                        <a href="https://github.com/arpitsingh4297/Data-Science-and-Business-Analytics-Projects/blob/main/PDS_project_final_submission.ipynb" target="_blank">Project Link</a>
+                    </div>
                 </div>
-                <a href="https://raw.githubusercontent.com/arpit1234565/Portfolio-Website/main/ArpitSinghResume.pdf" download class="btn btn2">Download CV</a>
+                <div class="work">
+                    <img src="https://raw.githubusercontent.com/arpit1234565/Portfolio-Website/main/Project_2.avif" alt="Inferential Statistics Project">
+                    <div class="layer">
+                        <h3>Inferential Statistics Project</h3>
+                        <p>The Inferential Statistics Project analyzes three industry problems.</p>
+                        <a href="https://github.com/arpitsingh4297/Data-Science-and-Business-Analytics-Projects/blob/main/IS%20Project%20Final%20Submission-%202.ipynb" target="_blank">Project Link</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="https://raw.githubusercontent.com/arpit1234565/Portfolio-Website/main/Project_3.jpg" alt="OTT Data Analysis">
+                    <div class="layer">
+                        <h3>OTT Data Analysis</h3>
+                        <p>This project analyzes content data to develop a linear regression model.</p>
+                        <a href="https://github.com/arpitsingh4297/Data-Science-and-Business-Analytics-Projects/blob/main/PM%20Project%20Source%20Code%20Final%20Submission.ipynb" target="_blank">Project Link</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="https://raw.githubusercontent.com/arpit1234565/Portfolio-Website/main/Project_4.png" alt="INN Hotels - Booking Cancellation Prediction">
+                    <div class="layer">
+                        <h3>INN Hotels - Booking Cancellation Prediction</h3>
+                        <p>This project develops machine learning models to predict booking cancellations.</p>
+                        <a href="https://github.com/arpitsingh4297/Data-Science-and-Business-Analytics-Projects/blob/main/Machine%20Learning%201%20Project%20Submission.ipynb" target="_blank">Project Link</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="https://raw.githubusercontent.com/arpit1234565/Portfolio-Website/main/Project_5.jpg" alt="EasyVisa Application">
+                    <div class="layer">
+                        <h3>EasyVisa Application</h3>
+                        <p>Analyze Visa applicant data to build a predictive model.</p>
+                        <a href="https://github.com/arpitsingh4297/Data-Science-and-Business-Analytics-Projects/blob/main/Machine%20Learning%201%20Project%20Submission.ipynb" target="_blank">Project Link</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="https://raw.githubusercontent.com/arpit1234565/Portfolio-Website/main/Project_6.png" alt="AllLife Bank">
+                    <div class="layer">
+                        <h3>AllLife Bank</h3>
+                        <p>This project segments AllLife Bank’s credit card customers based on spending patterns.</p>
+                        <a href="https://github.com/arpitsingh4297/Data-Science-and-Business-Analytics-Projects/blob/main/Unsupervised%20Learning%20Project%20Code%20Submission.ipynb" target="_blank">Project Link</a>
+                    </div>
+                </div>
             </div>
-            <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="Email" placeholder="Your Email" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
-                </form>
-                <span id="msg"></span>
-            </div>
+            <a href="#" class="btn">See more</a>
         </div>
     </div>
-    <div class="copyright">
-        <p>&copy; 2025 @ Arpit Arjun Singh. All Rights Reserved.</p>
-    </div>  
-</div>
 
-<script>
-    var tabLinks = document.getElementsByClassName("tab-links");
-    var tabContents = document.getElementsByClassName("tab-contents");
+    <!-- Contact Section -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i> Email: arpitsingh4297@outlook.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> Phone Number: 9975556702 / 9370201547</p>
+                    <br> <!-- Added line break -->
+                    <br> <!-- Added another line break -->
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100014442824564" target="_blank">
+                            <img src="https://raw.githubusercontent.com/arpit1234565/Portfolio-Website/main/facebook-icon.png" alt="Facebook">
+                        </a>
+                        <a href="https://www.instagram.com/_iam_arpitsingh_/?hl=en" target="_blank">
+                            <img src="https://raw.githubusercontent.com/arpit1234565/Portfolio-Website/main/instagram-icon.jpg" alt="Instagram">
+                        </a>
+                        <a href="https://www.linkedin.com/in/arpitsingh04" target="_blank">
+                            <img src="https://raw.githubusercontent.com/arpit1234565/Portfolio-Website/main/linkedin-icon.png" alt="LinkedIn">
+                        </a>
+                    </div>
+                    <a href="https://raw.githubusercontent.com/arpit1234565/Portfolio-Website/main/ArpitSinghResume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 @ Arpit Arjun Singh. All Rights Reserved.</p>
+        </div>  
+    </div>
 
-    function openTab(tabName){
-        for (let tabLink of tabLinks) {
-            tabLink.classList.remove("active-link");
+    <script>
+        var tabLinks = document.getElementsByClassName("tab-links");
+        var tabContents = document.getElementsByClassName("tab-contents");
+
+        function openTab(tabName, event) {
+            for (let tabLink of tabLinks) {
+                tabLink.classList.remove("active-link");
+            }
+            for (let tabContent of tabContents) {
+                tabContent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabName).classList.add("active-tab");
         }
-        for (let tabContent of tabContents) {
-            tabContent.classList.remove("active-tab");
+
+        function openmenu() {
+            document.getElementById('sidemenu').style.display = 'block';
         }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabName).classList.add("active-tab");
-    }
 
-    var sideMenu = document.getElementById("sidemenu");
-
-    function openMenu(){
-        sideMenu.style.right = "0";
-    }
-    function closeMenu(){
-        sideMenu.style.right = "-200px";
-    }
-
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbxRfQOCPCj6Zyz7ykqNaPlMVnEGFJSh8cVunBqiDgU4bZJXRF2vqQYnqMnMMQQtwIOWWw/exec'; // Your Google Apps Script URL
-    const form = document.forms['submit-to-google-sheet'];
-    const msg = document.getElementById("msg");
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault();
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = "Message sent successfully";
-            setTimeout(function(){
-                msg.innerHTML = "";
-            }, 5000);
-            form.reset();
-        })
-        .catch(error => console.error('Error!', error.message));
-    });
-</script>
-
+        function closemenu() {
+            document.getElementById('sidemenu').style.display = 'none';
+        }
+    </script>
 </body>
 </html>
